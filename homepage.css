@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.headerone{
+    background-color: rgb(0, 0, 50);
+    display:flex;
+    top: 0;
+    -webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10%;    
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.headerone .logoname{
+    display: inline-flex;
+}
+.headerone .logoname .logoimg{
+    width:70px;
+    height: 50px;
+}
+.headerone .logoname h1 a{
+    font-family: 'Lobster Two';
+    font-weight: 300;
+    text-align: center;
+    color: rgb(4, 0, 255);;
+    text-decoration: none;
+    font-size: 22px;
+}
+.headerone .navbar .nav_go li a, button{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 300;
+    font-display: fallback;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.headerone .navbar .nav_go li{
+      display: inline-block;
+      flex-direction: column;
+      padding: 0px 10px;
+}
+.headerone  .navbar .nav_go li a{
+    transition: all 0.3s ease 0s;
+}
+.headerone .navbar .nav_go li a:hover{    
+    color: red;
+}
+.headerone button{
+      padding: 10px 10px;
+      background-color: rgb(4, 0, 255);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      
+}
+.headerone button:hover{
+    background-color:rgba(31, 40, 94, 0.8);
+}
+  
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 1060px){
+    .checkbtn{
+        display: none;
+    }
+    .headerone{
+        background-color: rgb(0, 0, 50);
+        display:flex;
+        top: 0;
+        -webkit-box-align: center;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;    
+        width: 100%;
+        height: auto;
+        z-index: 100000;
+        position: fixed;
+    }
+
+    
+}
+
+@media (max-width: 872px){
+  .checkbtn{
+    display: block;
+  }
+  .headerone{
+    background-color: rgb(0, 0, 50);
+    display:flex;
+    top: 0;
+    -webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;    
+    width: 100%;
+    height: auto;
+    z-index: 100000;
+    position: fixed;
+}
+  .headerone .navbar .nav_go{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: 0%;
+      text-align: center;
+      transition: all .5s;
+  }
+  .headerone .navbar .nav_go li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  .headerone .navbar .nav_go li a, button{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 300;
+    font-display: fallback;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.headerone .navbar .nav_go li a:hover{    
+    color: red;
+   
+}
+#check:checked ~.nav_go{
+    left: 100%;
+  }
+
+  
+
+}
+
+ .footerone{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 50);
+    width: 100%;
+    height: auto;
+    -webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerone .containerone{
+     position: relative;
+     width: 100%;
+     height: auto;
+     padding: 10px;
+     background-color:black;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+}
+
+.footerone .containerone .socialmedia h2{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 300;
+    padding: auto;
+    position: relative;
+    color: rgb(4, 0, 255);
+}
+.footerone .containerone .socion{
+    display: flex;
+}
+.footerone .containerone .socion li{
+    list-style: none;
+}
+.footerone .containerone .socion li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 253, 253);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: rgb(4, 0, 255);
+}
+.footerone .containerone .socion li a:hover{
+    background: red;
+}
+  
+.footerone .containertwo{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+}
+.footerone .containertwo .about{
+    width: 35%;   
+}
+.footerone .containertwo .about p{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    font-display: fallback;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.footerone .containertwo .Quicklinks, .Support, .contactinfo{
+    width: 20%;
+}
+
+
+.footerone .containertwo .about h2, .Quicklinks h2, .Support h2, .contactinfo h2{
+    font-size: large;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+
+ .footerone .containertwo .about h2:before, .Quicklinks h2:before, .Support h2:before, .contactinfo h2:before{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom:-5px;
+   width: 80px;
+   height: 2px;
+   background: red;
+}
+
+.footerone .containertwo .Quicklinks .qlinks li a, .Support .stlinks li a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    font-display: fallback;
+    font-size: 16px;
+    line-height: 80%;
+}
+
+.footerone .containertwo .Quicklinks .qlinks li a:hover, .Support .stlinks li a:hover{
+    color:red;
+}
+.footerone .containertwo .contactinfo .cinfo li, span{
+    padding: 5px;
+}
+/* .footerone .containertwo .contactinfo .cinfo li{
+
+} */
